@@ -1,0 +1,25 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.thumbnail{
+    position: relative;
+    display: flex;
+}
+
+.thumbnail::before{
+    content: attr(data-duration);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    bottom: 5px;
+    right: 5px;
+    padding: 0.1em 0.3em;
+    border-radius: 0.3em;
+    font-size: 0.9rem;
+}
